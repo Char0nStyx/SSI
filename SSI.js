@@ -5,11 +5,11 @@
  * users are expected to implement the following function:
  * inject(inj)
  */
+const SSI_VERSION = 5;
+//SSI -> ShellShock injector
+console.log(`using SSI version ${SSI_VERSION}`);
 
 function runInjector() {
-  const SSI_VERSION = 4;
-  //SSI -> ShellShock injector
-  console.log(`using SSI version ${SSI_VERSION}.`);
   let shellJs;
   const oldOpenFunc = XMLHttpRequest.prototype.open;
   const oldResponse = Object.getOwnPropertyDescriptor(
