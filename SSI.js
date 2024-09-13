@@ -5,7 +5,7 @@
  * users are expected to implement the following function:
  * inject(inj)
  */
-const SSI_VERSION = 5;
+const SSI_VERSION = 6;
 //SSI -> ShellShock injector
 console.log(`using SSI version ${SSI_VERSION}`);
 
@@ -40,7 +40,7 @@ function runInjector() {
       js = js.replaceAll(o, n);
     };
     //user-implemented function
-    if (typeof inject === "function") inject(inj);
+    if (typeof inject === "function") inject(inj, js);
     return js;
   };
 }
