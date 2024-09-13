@@ -7,7 +7,7 @@
  */
 
 function runInjector() {
-  const VERSION = 2;
+  const VERSION = 3;
   //SSI -> ShellShock injector
   console.log(`using SSI version ${VERSION})`);
   let shellJs;
