@@ -2,9 +2,8 @@
  * SSI
  * it is expected that this code is loaded dynamically in mods.
  * See modBase repo.
- * users are expected to implement the following functions:
+ * users are expected to implement the following function:
  * inject(inj)
- * modMain()
  */
 
 function runInjector() {
@@ -40,9 +39,8 @@ function runInjector() {
       //prototype function at the start of the page and then run that.
       js = js.replaceAll(o, n);
     };
-    //user-implemented functions
+    //user-implemented function
     if (typeof inject === "function") inject(inj);
-    if (typeof modMain === "function") modMain();
     return js;
   };
 }
