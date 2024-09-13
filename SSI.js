@@ -7,9 +7,9 @@
  */
 
 function runInjector() {
-  const VERSION = 3;
+  const SSI_VERSION = 4;
   //SSI -> ShellShock injector
-  console.log(`using SSI version ${VERSION})`);
+  console.log(`using SSI version ${SSI_VERSION}.`);
   let shellJs;
   const oldOpenFunc = XMLHttpRequest.prototype.open;
   const oldResponse = Object.getOwnPropertyDescriptor(
